@@ -1,7 +1,7 @@
 ---
 title: "Dynamic and Reproducible Reports Using Eviews, R and R Markdown"
-author: "Sagiru Mati"
-date: "8/13/2019"
+author: "**Sagiru Mati**"
+date: '**`r format(Sys.time(), "%A, %B %d, %Y")`**'
 output: 
   html_document:
     toc: true
@@ -17,22 +17,23 @@ fig_caption: yes
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+<br><br>
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Welcome to the homepage for __Dynamic and Reproducible Reports Using Eviews, R and R Markdown__
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-```
+In order to read more about me, please visit my [Blog](https:sagirmati.blogspot.com), which I created purposely for those interested in learning Dynamic and Reproducible reports using __Eviews, R and R Markdown__.
 
-## Including Plots
+Please feel free to post questions, comments, suggestions and/or corrections on the __Blog__.
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+<br><br><br><br>
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+__Sagiru Mati,__ 
+
+__Department of Economics,__
+
+__Northwest University (Yusuf Maitama Sule University) Kano,__
+
+__Nigeria.__

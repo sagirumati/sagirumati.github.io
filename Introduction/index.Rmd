@@ -13,7 +13,21 @@ urlcolor: green
 citecolor: green
 fig_caption: true
 bibliography: EviewsR.bib
+csl: CSL/apa.csl
 ---
+
+```{r function,include=FALSE}
+docx= function() {
+knitr::opts_knit$get("rmarkdown.pandoc.to")=="docx"
+}
+latex= function() {
+knitr::opts_knit$get("rmarkdown.pandoc.to")=="latex"
+}
+html= function() {
+knitr::opts_knit$get("rmarkdown.pandoc.to")=="html"
+}
+```
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -52,7 +66,7 @@ The research community are not only inerested in the research results, but also 
 I think it is a good idea to give an example using the Map of west Africa. I believe it will be difficult, if not impossible, to reproduce the following map exactly if people do not have access to the __code__ that produces it. It will take a lot of effort, time and energy to produce something close to the map shown in Figure \@ref(fig:ECOWAS)
 .
 
-<br><br><br><br>
+<br><br>
 
 ```{r ECOWAS,fig.cap="Map of ECOWAS countries",fig.asp=0.45,out.height="80%",out.width="\\textwidth",fig.pos='h',fig.align="center"}
 library(maps)
@@ -63,14 +77,14 @@ legend("topleft",c("Niger","Nigeria","Ivory Coast","Burkina Faso","Benin","Sierr
 ```
 
 
-<br><br><br><br>
+<br><br>
 
 
 
 However it will take few seconds for everyone, depending on computer speed, to __reproduce__ the map if s/he uses the following sets of __code__.
 
 
-<br><br><br><br>
+<br><br>
 
 ```{r ECOWAS-EVAL,eval=FALSE,echo=TRUE,fig.cap="Map of ECOWAS countries",fig.asp=0.45,out.height="80%",out.width="\\textwidth",fig.pos='h',fig.align="center"}
 library(maps)
@@ -81,13 +95,13 @@ legend("topleft",c("Niger","Nigeria","Ivory Coast","Burkina Faso","Benin","Sierr
 ```
 
 
-<br><br><br><br>
+<br><br>
 
 What do you think if you get some corrections/suggestions to modify the color legend of some or all of the countries on the map of Figure \@ref(fig:ECOWAS1)
 , for example:
 
 
-<br><br><br><br>
+<br><br>
 
 ```{r ECOWAS1,fig.cap="Map of ECOWAS countries",fig.asp=0.45,out.height="0.5\textwidth",out.width="\textwidth",fig.pos='t',fig.align="center"}
 library(maps)
@@ -102,13 +116,13 @@ legend("topleft",c("Niger","Nigeria","Ivory Coast","Burkina Faso","Benin","Sierr
 ```
 
 
-<br><br><br><br>
+<br><br>
 
 
 That's so easy, all it takes is few seconds if you run the following codes in R.
 
 
-<br><br><br><br>
+<br><br>
 
 ```{r ECOWAS1-eval,eval=FALSE,echo=TRUE,fig.cap="Map of ECOWAS countries",fig.asp=0.45,out.height="0.5\textwidth",out.width="\textwidth",fig.pos='t',fig.align="center"}
 library(maps)
@@ -123,13 +137,13 @@ legend("topleft",c("Niger","Nigeria","Ivory Coast","Burkina Faso","Benin","Sierr
 ```
 
 
-<br><br><br><br>
+<br><br>
 
 
 Figures \@ref(fig:ECOWAS) and \@ref(fig:ECOWAS1) show how creating map of west Africa is **Dynamic and Reproducible**.
 
 
-<br><br><br><br>
+<br><br>
 
 # Why Should  Reports  be Dynamic and Reproducible?
 
@@ -154,4 +168,8 @@ I have chosen to work with [Eviews](https://www.eviews.com) on this __Blog__ as 
 
 R and R Markdown are necessary tools for dynamic and reproducible reports as they can set up to commmunicate with Eviews. Moreover, the first two tools are free and open-source and license of Eviews is relatively low, especially for students.
 
+
+<br><br><br> 
+
+# References {-}
 
