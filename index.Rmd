@@ -1,8 +1,16 @@
 ---
-title: "Testing my Github page"
+title: "Dynamic and Reproducible Reports Using Eviews, R and R Markdown"
 author: "Sagiru Mati"
 date: "8/13/2019"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    number_sections: true
+linkcolor: blue
+link-citations: yes
+urlcolor: blue
+citecolor: green
+fig_caption: yes
 ---
 
 ```{r setup, include=FALSE}
