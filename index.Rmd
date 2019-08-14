@@ -19,6 +19,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br><br>
 
+
+
 Welcome to the homepage for __Dynamic and Reproducible Reports Using Eviews, R and R Markdown__
 
 <br><br>
