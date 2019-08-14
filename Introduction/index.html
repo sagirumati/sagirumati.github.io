@@ -388,9 +388,10 @@ summary {
 <li><p>How to learn Eviews programming easily</p></li>
 <li><p>How to make your reports dynamic and reproducible using <strong>Eviews, R and R Markdown</strong>. You will no longer have to copy tables and figures from your Eviews workspace and paste into your report; everything will be copied into your report dynamically and automatically.</p></li>
 <li><p>How to integrate Eviews, R, and R Markdown. That is running Eviews program from another application.</p></li>
-<li><p>Tricks to produce <strong>html, pdf and docx</strong> outputs from one source file of <strong>R Markdown</strong>. If you learn R Markdown, you are likely to burn all our <span class="math inline">\(\LaTeX\)</span> distributions and other authoring (typesetting) applications.</p></li>
-<li><p>Step by step guide to develop an R package that can integrate Eviews R, and R Markdown.</p></li>
-<li><p>Learn how to work with version control system, specifically <a href="https://www.github.com">github</a>. Therefore, you longer have to be saving your files with various names (such as update1, update2,final version, final version2 and so on)</p></li>
+<li><p>Tricks to produce <strong>html, pdf and docx</strong> outputs from one source file of <strong>R Markdown</strong>. If you learn R Markdown, you are likely to burn all your Latex (<span class="math inline">\(\LaTeX\)</span>) distributions and other authoring (typesetting) applications.</p></li>
+<li><p>Learn how to automatically format tables, graphs and text in your html, pdf and docx documents. Imagine controlling and formatting (bold, italic,centering) all tables in your docx file by pressing some keys like <code>ctrl+T</code></p></li>
+<li><p>Step by step guide to develop an R package that can integrate Eviews, R, and R Markdown.</p></li>
+<li><p>Learn how to work with version control system, specifically <a href="https://www.github.com">github</a>. Therefore, you <strong>no longer</strong> have to be saving your files with various names (such as update1, update2, final version, final version2 and so on)</p></li>
 <li><p>In addtion to this, I will make sure that followers of this blog learn how to set up a blog and a webpage like this, where you have all your codes, tables, graphs and explanation in one place.</p></li>
 <li><p>A lot of other important skills.</p></li>
 </ol>
@@ -400,7 +401,7 @@ summary {
 <p>Have you ever submittted a manuscript to a journal or thesis to your supervisor, or financial report to your boss, or something similar to these? If the answer is yes, I believe you have got some sort of corrections or suggestions to make some changes. These changes may take as much time as writing the original report. Assume that your journal editor asks you to change your bibligraphy sttyle from APA to Chicago, or to some other weird style and at the same you are asked to change the decimal points of your table figures from 2 to 3. This will take a lot of time if your report is <strong>NOT</strong> dynamic.</p>
 <p>Dynamic report means that every part of your report is linked to other parts, and vice versa. For this reason, changing the bibliographic style and the number of decimal points in a table or any part of the document will take you <strong>less than a minute</strong>! Another dimension of dynamic report is the ability to produce different output formats (<strong>html, pdf, docx, epub, and so on</strong>) from the same content.</p>
 <p>The research community are not only inerested in the research results, but also the reproducibility of results. The world has changed from asking “<strong>Please, how did you do it?</strong>” to “<strong>Please give me the code</strong>”. Reproducible report simply means that everyone can generate (reproduce) your report exactly, given that they have access to and can run your <strong>code</strong> on their machine successfuly.</p>
-<p>I think it is a good idea to give an example using the Map of west Africa. I believe it will be difficult, if not impossible, to reproduce the following map exactly if people do not have access to the <strong>code</strong> that produces it. It will take a lot of effort, time and energy to produce something close to the map shown in Figure <a href="#fig:ECOWAS">2.1</a>
+<p>I think it is a good idea to give an example using the map of West Africa. I believe it will be difficult, if not impossible, to reproduce the following map exactly if people do not have access to the <strong>code</strong> that produces it. It will take a lot of effort, time and energy to produce something close to the map shown in Figure <a href="#fig:ECOWAS">2.1</a>
 .</p>
 <p><br><br></p>
 <div class="figure" style="text-align: center"><span id="fig:ECOWAS"></span>
@@ -410,7 +411,7 @@ Figure 2.1: Map of ECOWAS countries
 </p>
 </div>
 <p><br><br></p>
-<p>However it will take few seconds for everyone, depending on computer speed, to <strong>reproduce</strong> the map if s/he uses the following sets of <strong>code</strong>.</p>
+<p>However it will take few seconds for everyone, depending on computer speed, to <strong>reproduce</strong> the map (Figure <a href="#fig:ECOWAS">2.1</a>) if s/he uses the following sets of <strong>code</strong>.</p>
 <p><br><br></p>
 <pre class="r"><code>library(maps)
 library(mapdata)
@@ -418,7 +419,7 @@ col_vector&lt;-c(&#39;#e6194b&#39;, &#39;#3cb44b&#39;, &#39;#ffe119&#39;, &#39;#
 ECOWAS=map(&quot;worldHires&quot;,region=c(&quot;Niger&quot;,&quot;Nigeria&quot;,&quot;Ivory Coast&quot;,&quot;Burkina Faso&quot;,&quot;Benin&quot;,&quot;Sierra Leone&quot;,&quot;Senegal&quot;,&quot;Mali&quot;,&quot;Cape Verde:Sao Tiago&quot;,&quot;Togo&quot;,&quot;Ghana&quot;,&quot;Liberia&quot;,&quot;Gambia&quot;,&quot;Guinea&quot;,&quot;Guinea-Bissau&quot;),exact=T,fill=TRUE,col=col_vector,bty = &quot;n&quot;,mar=c(0,0,0,0)) 
 legend(&quot;topleft&quot;,c(&quot;Niger&quot;,&quot;Nigeria&quot;,&quot;Ivory Coast&quot;,&quot;Burkina Faso&quot;,&quot;Benin&quot;,&quot;Sierra Leone&quot;,&quot;Senegal&quot;,&quot;Mali&quot;,&quot;Cape Verde&quot;,&quot;Togo&quot;,&quot;Ghana&quot;,&quot;Liberia&quot;,&quot;Gambia&quot;,&quot;Guinea&quot;,&quot;Guinea-Bissau&quot;),ncol= 2,cex = 0.77,fill = col_vector,bty = &quot;n&quot;)</code></pre>
 <p><br><br></p>
-<p>What do you think if you get some corrections/suggestions to modify the color legend of some or all of the countries on the map of Figure <a href="#fig:ECOWAS1">2.2</a>
+<p>What do you think if you get some corrections/suggestions to modify the color legend(s) of some or all of the countries on the map in Figure <a href="#fig:ECOWAS1">2.2</a>
 , for example:</p>
 <p><br><br></p>
 <div class="figure" style="text-align: center"><span id="fig:ECOWAS1"></span>
@@ -440,7 +441,7 @@ col_vector[11]=&quot;yellow&quot;
 ECOWAS=map(&quot;worldHires&quot;,region=c(&quot;Niger&quot;,&quot;Nigeria&quot;,&quot;Ivory Coast&quot;,&quot;Burkina Faso&quot;,&quot;Benin&quot;,&quot;Sierra Leone&quot;,&quot;Senegal&quot;,&quot;Mali&quot;,&quot;Cape Verde:Sao Tiago&quot;,&quot;Togo&quot;,&quot;Ghana&quot;,&quot;Liberia&quot;,&quot;Gambia&quot;,&quot;Guinea&quot;,&quot;Guinea-Bissau&quot;),exact=T,fill=TRUE,col=col_vector,bty = &quot;n&quot;,mar=c(0,0,0,0)) 
 legend(&quot;topleft&quot;,c(&quot;Niger&quot;,&quot;Nigeria&quot;,&quot;Ivory Coast&quot;,&quot;Burkina Faso&quot;,&quot;Benin&quot;,&quot;Sierra Leone&quot;,&quot;Senegal&quot;,&quot;Mali&quot;,&quot;Cape Verde&quot;,&quot;Togo&quot;,&quot;Ghana&quot;,&quot;Liberia&quot;,&quot;Gambia&quot;,&quot;Guinea&quot;,&quot;Guinea-Bissau&quot;),ncol= 2,cex = 0.77,fill = col_vector,bty = &quot;n&quot;)</code></pre>
 <p><br><br></p>
-<p>Figures <a href="#fig:ECOWAS">2.1</a> and <a href="#fig:ECOWAS1">2.2</a> show how creating map of west Africa is <strong>Dynamic and Reproducible</strong>.</p>
+<p>Figures <a href="#fig:ECOWAS">2.1</a> and <a href="#fig:ECOWAS1">2.2</a> show how creating map of West Africa is <strong>Dynamic and Reproducible</strong>.</p>
 <p><br><br></p>
 </div>
 <div id="why-should-reports-be-dynamic-and-reproducible" class="section level1">
@@ -451,7 +452,7 @@ legend(&quot;topleft&quot;,c(&quot;Niger&quot;,&quot;Nigeria&quot;,&quot;Ivory C
 </div>
 <div id="tools-for-dynamic-and-reproducible-reports" class="section level1">
 <h1><span class="header-section-number">4</span> Tools for Dynamic and Reproducible Reports</h1>
-<p>To some extent, <span class="math inline">\(\LaTeX\)</span>, <strong>Microsoft Office Word</strong>, <strong>LibreOffice</strong> and <strong>OpenOffice</strong> can make reports <strong>dynamic and reproducible</strong>. However, their capacity is limited as they make no provisions for <code>inline codes</code>.</p>
+<p>To some extent, Latex (<span class="math inline">\(\LaTeX\)</span>), <strong>Microsoft Office Word</strong>, <strong>LibreOffice</strong> and <strong>OpenOffice</strong> can make reports <strong>dynamic and reproducible</strong>. However, their capacity is limited as they make no provisions for <code>inline codes</code>.</p>
 <p>Other tools of dynamic and reproducible reports include SASDown by <em>Statistical Analysis Software</em> (<a href="https://www.sas.com">SAS</a>), <em>Stata Markdown</em> introduced in <a href="https://www.stata.com">Stata</a> 16. The limitations of these tools include inability to work (communicate) with other programming languages or statistical softwares. For example, Stata cannot work in tandem with SAS or C++ to make dynamic and reproducible reports, and the reverse is true.</p>
 <p>On the other hand, <a href="https://www.r-project.org">R</a> and <em>R Markdown</em> provided by the Integrated Development Environment <a href="https://www.rstudio.com">Rstudio</a> offer the possibility of making reports dynamic and reproducible, and can <strong>communicate</strong> with other statistical softwares or other programming languages. Thanks to <a href="https://yihui.name/knitr/">knitr</a> package created by <a href="https://www.yihui.name">Yihui Xie</a> <span class="citation">(see Xie, <a href="#ref-yihui2019">2019</a>, <a href="#ref-yihui2014">2014</a>, <a href="#ref-yihui2015">2015</a>)</span></p>
 </div>
