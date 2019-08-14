@@ -46,9 +46,11 @@ If you follow __this blog__, I will walk you through the following:
 
 1. How to integrate Eviews, R, and R Markdown. That is running Eviews program from another application.
 
-1. Tricks to produce __html, pdf and docx__ from one source file.
+1. Tricks to produce __html, pdf and docx__ outputs from one source file of __R Markdown__. If you learn R Markdown, you are likely to burn all our \(\LaTeX\) distributions and other authoring (typesetting) applications.
 
-1. Step by step guide to develop an R package that can work integrate Eviews R, and R Markdown.
+1. Step by step guide to develop an R package that can integrate Eviews R, and R Markdown.
+
+1. Learn how to work with version control system, specifically [github](https://www.github.com). Therefore, you longer have to be saving your files with various names (such as update1, update2,final version, final version2 and so on)
 
 1. In addtion to this, I will make sure that followers of this blog learn how to set up a blog and a webpage like this, where you have all your codes, tables, graphs and explanation in one place.
 
@@ -169,7 +171,16 @@ I have chosen to work with [Eviews](https://www.eviews.com) on this __Blog__ as 
 R and R Markdown are necessary tools for dynamic and reproducible reports as they can set up to commmunicate with Eviews. Moreover, the first two tools are free and open-source and license of Eviews is relatively low, especially for students.
 
 
+
+<br><br>
+
+In order to read more about me, please  [visit my Blog](https:smatiacademy.blogspot.com), which I created purposely for those interested in learning Dynamic and Reproducible reports using __Eviews, R and R Markdown__.
+
+Please feel free to post questions, comments, suggestions and/or corrections on the __Blog__.
+
+
 <br><br><br> 
+
 
 # References {-}
 
