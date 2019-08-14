@@ -46,11 +46,13 @@ If you follow __this blog__, I will walk you through the following:
 
 1. How to integrate Eviews, R, and R Markdown. That is running Eviews program from another application.
 
-1. Tricks to produce __html, pdf and docx__ outputs from one source file of __R Markdown__. If you learn R Markdown, you are likely to burn all our \(\LaTeX\) distributions and other authoring (typesetting) applications.
+1. Tricks to produce __html, pdf and docx__ outputs from one source file of __R Markdown__. If you learn R Markdown, you are likely to burn all our Latex ($\LaTeX$) distributions and other authoring (typesetting) applications.
 
-1. Step by step guide to develop an R package that can integrate Eviews R, and R Markdown.
+1. Learn how to automatically format tables, graphs and text in your html, pdf and docx documents. Imagine controlling and formatting (bold, italic,centering) all tables in your docx file by pressing some keys like `ctrl+T`
 
-1. Learn how to work with version control system, specifically [github](https://www.github.com). Therefore, you longer have to be saving your files with various names (such as update1, update2,final version, final version2 and so on)
+1. Step by step guide to develop an R package that can integrate Eviews, R, and R Markdown.
+
+1. Learn how to work with version control system, specifically [github](https://www.github.com). Therefore, you __no longer__ have to be saving your files with various names (such as update1, update2, final version, final version2 and so on)
 
 1. In addtion to this, I will make sure that followers of this blog learn how to set up a blog and a webpage like this, where you have all your codes, tables, graphs and explanation in one place.
 
@@ -157,7 +159,7 @@ Therefore it is good to make your report dynamic and reproducible.
 
 # Tools for Dynamic and Reproducible Reports
 
-To some extent, \(\LaTeX\),  __Microsoft Office Word__, __LibreOffice__ and  __OpenOffice__ can make reports __dynamic and reproducible__. However, their capacity is limited as they make no provisions for `inline codes`.
+To some extent, Latex ($\LaTeX$),  __Microsoft Office Word__, __LibreOffice__ and  __OpenOffice__ can make reports __dynamic and reproducible__. However, their capacity is limited as they make no provisions for `inline codes`.
 
 Other tools of dynamic and reproducible reports include SASDown by _Statistical Analysis Software_ ([SAS](https://www.sas.com)), _Stata Markdown_ introduced in [Stata](https://www.stata.com) 16. The limitations of these tools include inability to work (communicate) with other programming languages or statistical softwares. For example, Stata cannot work in tandem with SAS or C++ to make dynamic and reproducible reports, and the reverse is true.
 
