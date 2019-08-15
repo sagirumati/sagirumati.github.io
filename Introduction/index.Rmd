@@ -12,7 +12,7 @@ link-citations: yes
 urlcolor: green
 citecolor: green
 fig_caption: true
-bibliography: EviewsR.bib
+bibliography: References.bib
 csl: CSL/apa.csl
 ---
 
@@ -176,7 +176,7 @@ R and R Markdown are necessary tools for dynamic and reproducible reports as the
 
 <br><br>
 
-In order to read more about me, please  [visit my Blog](https:smatiacademy.blogspot.com), which I created purposely for those interested in learning Dynamic and Reproducible reports using __Eviews, R and R Markdown__.
+In order to read more about me, please  [visit my Blog](https://smatiacademy.blogspot.com), which I created purposely for those interested in learning Dynamic and Reproducible reports using __Eviews, R and R Markdown__.
 
 Please feel free to post questions, comments, suggestions and/or corrections on the __Blog__.
 
